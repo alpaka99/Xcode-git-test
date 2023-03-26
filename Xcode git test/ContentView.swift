@@ -17,6 +17,15 @@ struct ContentView: View {
             Text("Hello from Lets :)\n Apple Developer Academy 2nd")
                 .font(.largeTitle)
                 .foregroundColor(.blue)
+            Text("Hello from new branch")
+                .font(.headline)
+                .padding()
+                .background(.yellow)
+                .padding()
+                .background(.green)
+                .padding()
+                .background(.blue)
+            
         }
         .padding()
     }

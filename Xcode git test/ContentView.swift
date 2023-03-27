@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    let countries = ["Korea", "Japan", "USA", "UK", "Ukraine", "Germany", "Spain"]
+    let foods = ["Pizza", "Spaghetti", "Sushi", "Bibimbop", "Ramen", "Coffee & Donut", "Chicken"]
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(countries, id: \.self) { country in
-                    Text(country)
+                ForEach(foods, id: \.self) { food in
+                    Text(food)
                         .padding()
                 }
             }
-            .navigationTitle("Conflict test")
-            .navigationBarTitleDisplayMode(.large)
         }
     }
 }

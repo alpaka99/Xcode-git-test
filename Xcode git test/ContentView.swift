@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    let foods = ["Pizza", "Spaghetti", "Sushi", "Bibimbop", "Ramen", "Coffee & Donut", "Chicken"]
     
     var body: some View {
-        Text("plz conflict")
-            .padding()
+        NavigationView {
+            Text("plz conflict")
+                .padding()
+            List {
+                ForEach(foods, id: \.self) { food in
+                    Text(food)
+                        .padding()
+                }   
+            }
+        }
     }
 }
 

@@ -12,13 +12,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            Text("plz conflict")
-                .padding()
             List {
                 ForEach(foods, id: \.self) { food in
                     Text(food)
                         .padding()
-                }   
+                }
+            Text("plz conflict")
+                    .padding()
             }
         }
     }

@@ -11,16 +11,8 @@ struct ContentView: View {
     let countries = ["Korea", "Japan", "USA", "UK", "Ukraine", "Germany", "Spain"]
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(countries, id: \.self) { country in
-                    Text(country)
-                        .padding()
-                }
-            }
-            .navigationTitle("Conflict test")
-            .navigationBarTitleDisplayMode(.large)
-        }
+        Text("plz conflict")
+            .padding()
     }
 }
 

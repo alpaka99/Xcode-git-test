@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    let countries = ["Korea", "Japan", "USA", "UK", "Ukraine", "Germany", "Spain"]
+    
     var body: some View {
-        Text("Hello from Cloned main branch")
-        .padding()
+        NavigationView {
+            List {
+                ForEach(countries, id: \.self) { country in
+                    Text(country)
+                        .padding()
+                }
+            }
+            .navigationTitle("Conflict test")
+            .navigationBarTitleDisplayMode(.large)
+        }
     }
 }
 

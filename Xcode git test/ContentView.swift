@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    let countries = ["Korea", "Japan", "USA", "UK", "Ukraine", "Germany", "Spain"]
     
     var body: some View {
         Text("plz conflict")
